@@ -1,8 +1,9 @@
 # 2016 Tite-seq inference
-This is code used to infer binding affinities from my paper
+This code is used to infer binding affinities from a high thoughput method called Tite-seq. In brief, I used yeast display to express antibodies on cell surfaces, titrated them under multiple antigen concentrations, FACS sorted these populations by antigen binding, and then used NGS Illumina sequencing to measure the fraction of variants in each sorted sub-population. An important step in this is the inference of binding affinity curves from NGS read abundance. This repository contains code that can perform the inference. The full method was described in
 ```
 Adams, Rhys M., Thierry Mora, Aleksandra M. Walczak, and Justin B. Kinney. "Measuring the sequence-affinity landscape of antibodies with massively parallel titration curves." Elife 5 (2016): e23156.
 ```
+
 If you use this code please cite this paper.
 
 I'm creating a separate repository since python has changed and people
