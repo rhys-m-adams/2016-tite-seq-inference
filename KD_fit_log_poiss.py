@@ -523,13 +523,13 @@ def main():
     if this is run as the main script, and the name of input file and output file are known, the input file must be a binary pickled file as:
     1)R- MXN numpy array of read counts for sequence s. M is the number antigen concentration, and N is the number of bins
     2)T- MXN numpy array of total read counts.
-    3)b- coefficent relating sequence sampling rate to cell sort rate. p(x)~(x*b*T)^R * e^(-x*b*T)/R!
-    4)k_scan- numpy array of guess for the fraction of the population that has sequence s
-    5)c- fluorescence value of each bin
-    6)basal- basal fluorescence of cells (without antigen)
+    3)b- MXN numpy array of coefficents relating sequence sampling rate to cell sort rate. p(x)~(x*b*T)^R * e^(-x*b*T)/R!
+    4)k_scan- _XM numpy array of guess for the fraction of the population that has sequence s
+    5)c- _XN numpy a array fluorescence value of each bin
+    6)basal- float basal fluorescence of cells (without antigen)
     7)KD_scan- np.array of possible KD values
     8)s_scan- np.array of possible number of functional antibodies
-    9)fl- antigen concentrations
+    9)fl- XM np.array antigen concentrations
     optional (10):
     unsorted- a list of 2-tuples containing unsorted float/int read counts.
     The first element in a tuple is the number of reads with a sequence.
